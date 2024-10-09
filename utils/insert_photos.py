@@ -4,7 +4,7 @@ import os
 
 
 search_root = "/home/yhzhang/workspace/biocas-conference.github.io"
-year_path = "photos/2022"
+year_path = "photos/2019"
 search_path = os.path.join(search_root, year_path)
 
 
@@ -15,7 +15,7 @@ filelist = []
 
 for root, dirs, files in os.walk(search_path):
     for file in files:
-        if file.endswith(".jpg"):
+        if file.endswith(".JPG"):
             filepath = os.path.join(year_path, file)
             #print (filepath)
             filelist.append(filepath)
